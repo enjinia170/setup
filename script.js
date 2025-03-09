@@ -61,6 +61,7 @@ async function readNFC() {
 document.getElementById("setupInput").addEventListener("click", function() {
     document.getElementById("mainContent").innerHTML = `
         <h4>セットアップ証明書入力</h4>
+        <p>
         <label for="name">セットアップ申込者</label>
 <input 
   type="text" 
@@ -71,6 +72,7 @@ document.getElementById("setupInput").addEventListener("click", function() {
   maxlength="8" 
   size="10" 
 />
+<p>
             <label>セットアップ管理番号:</label>
             <select id="setupNumber">
 <option value="48293741">48293741</option>
@@ -213,19 +215,20 @@ document.getElementById("setupInput").addEventListener("click", function() {
 <option value="52039478">52039478</option>
 
             </select>
-
+<p>
             <label>設置場所:</label>
             <select id="location">
                 <option value="屋内">屋内</option>
                 <option value="屋外">屋外</option>
             </select>
+            <p>
 <label>総務省規定な
 い電波の有無</label>
             <select id="location">
                 <option value="〇">〇</option>
                 <option value="✕">✕</option>
             </select>
-
+<p>
             <label>モジュールな
 どによる電波
 発信</label>
@@ -233,12 +236,13 @@ document.getElementById("setupInput").addEventListener("click", function() {
                 <option value="〇">〇</option>
                 <option value="✕">✕</option>
             </select>
+            <p>
             <label>電源モジュール</label>
             <select id="location">
                 <option value="〇">〇</option>
                 <option value="✕">✕</option>
             </select>
-            
+            <p>
             <label>機器管理番号:</label>
             <select id="deviceNumber">
                 <option value="42085713">42085713</option>
@@ -398,14 +402,15 @@ document.getElementById("setupInput").addEventListener("click", function() {
 <option value="75492083">75492083</option>
 </option>
             </select>
-
+<p>
             <label>落下防止装置の有無:</label>
             <select id="dropProtection">
                 <option value="あり">あり</option>
                 <option value="なし">なし</option>
             </select>
-
+<p>
             <button id="connectSerial">データクリア</button>
+            
             <button id="writeNFC">書き込み開始</button>
             
 
