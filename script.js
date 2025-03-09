@@ -61,15 +61,16 @@ async function readNFC() {
 document.getElementById("setupInput").addEventListener("click", function() {
     document.getElementById("mainContent").innerHTML = `
         <h4>セットアップ証明書入力</h4>
-        <form>
-       <input
-       type="text"
-  id="name"
-  name="name"
-  required
-  minlength="4"
-  maxlength="8"
-  size="10" />
+        <label for="name">セットアップ申込者</label>
+<input 
+  type="text" 
+  id="name" 
+  name="name" 
+  required 
+  minlength="4" 
+  maxlength="8" 
+  size="10" 
+/>
             <label>セットアップ管理番号:</label>
             <select id="setupNumber">
 <option value="48293741">48293741</option>
@@ -218,7 +219,26 @@ document.getElementById("setupInput").addEventListener("click", function() {
                 <option value="屋内">屋内</option>
                 <option value="屋外">屋外</option>
             </select>
+<label>総務省規定な
+い電波の有無</label>
+            <select id="location">
+                <option value="〇">〇</option>
+                <option value="✕">✕</option>
+            </select>
 
+            <label>モジュールな
+どによる電波
+発信</label>
+            <select id="location">
+                <option value="〇">〇</option>
+                <option value="✕">✕</option>
+            </select>
+            <label>電源モジュール</label>
+            <select id="location">
+                <option value="〇">〇</option>
+                <option value="✕">✕</option>
+            </select>
+            
             <label>機器管理番号:</label>
             <select id="deviceNumber">
                 <option value="42085713">42085713</option>
