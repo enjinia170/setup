@@ -62,6 +62,14 @@ document.getElementById("setupInput").addEventListener("click", function() {
     document.getElementById("mainContent").innerHTML = `
         <h4>セットアップ証明書入力</h4>
         <form>
+       <input
+       type="text"
+  id="name"
+  name="name"
+  required
+  minlength="4"
+  maxlength="8"
+  size="10" />
             <label>セットアップ管理番号:</label>
             <select id="setupNumber">
 <option value="48293741">48293741</option>
