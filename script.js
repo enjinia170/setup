@@ -222,8 +222,7 @@ document.getElementById("setupInput").addEventListener("click", function() {
                 <option value="屋外">屋外</option>
             </select>
             <p>
-<label>総務省規定な
-い電波の有無</label>
+<label>総務省規定内電波の有無</label>
             <select id="location">
                 <option value="〇">〇</option>
                 <option value="✕">✕</option>
@@ -410,7 +409,7 @@ document.getElementById("setupInput").addEventListener("click", function() {
             </select>
 <p>
             <button id="connectSerial">データクリア</button>
-            
+            <p>
             <button id="writeNFC">書き込み開始</button>
             
 
